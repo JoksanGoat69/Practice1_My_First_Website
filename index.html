@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Especifica el tipo de documento y la versión de HTML -->
+    <meta charset="UTF-8">
+    <!-- Configura el viewport para que el sitio sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Picapote Studio</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    
+    <!-- Sección de encabezado del sitio -->
+    <header>
+       <ul>  
+        
+            <div class="Picapote">
+                <li><a href="index.html"><img width="50" height="75" src="Picapote.png"></a></li>
+            </div>
+
+            <div><h2 class="picapotedesign">PICAPOTE STUDIO</h2></div>
+     </ul>
+        
+       
+    <!-- Barra de navegación con enlaces -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li>
+                <a href="contact.html">Contact</a>
+                <ul>
+                    <li><a href="https://www.instagram.com/picapotedesign/">Picapote IG</a></li>
+                    <li><a href="https://www.instagram.com/rg_draws/">RG_Draws</a></li>
+                    <li><a href="https://www.instagram.com/joksanrg10/">Personal profile</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Contenido principal de la página -->
+    <main>
+        <section>
+            <h2>Welcome to Picapote Art & Design Studio</h2>
+            <p></p>
+        </section>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Gpd85y_iTxY?si=xF5Z-89PwD1GPT9l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <img width="250" height="250" src="OtisNazi.jpg"> 
+
+      <p>Some of the products that we created</p>
+      
+      <div class="slider-container">
+        <div class="slider-content">
+            <div class="slider-item">
+                <img width= "400" height= "400" src="imagen1.jpg" alt="Imagen 1">
+            </div>
+            <div class="slider-item">
+                <img width= "400" height= "400" src="imagen2.jpg" alt="Imagen 2">
+            </div>
+            <div class="slider-item">
+                <img width= "400" height= "400" src="imagen3.jpg" alt="Imagen 3">
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        function showSlides() {
+            const slides = document.querySelectorAll(".slider-item");
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? "block" : "none";
+            });
+            setTimeout(() => {
+                slideIndex++;
+                showSlides();
+            }, 1500); // Cambia la imagen cada 3 segundos
+        }
+    </script>
+       
+    </main>
+    <!-- Pie de página del sitio -->
+    <footer>
+        <p>&copy; "Picapote Studio", 2024</p>
+    </footer>
+</body>
+</html>
