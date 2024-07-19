@@ -9,7 +9,7 @@ body {
     /* Color de fondo del sitio web */
 background-image: url(Fondo_Negro.jpg);
 background-size: cover;
-display: block;
+
 
 
 }
@@ -19,32 +19,33 @@ header {
     
     /* Color de fondo del encabezado */
 background-color: black;
-background-size: 75%;
+
 
 
     /* Color del texto en el encabezado */
     color: #fff;
     display: inline;
+    overflow: auto;
   }
 
     .Picapote{
-       display: inline;
-       position: relative;
-     
+      
+       margin-left: 5px;
+       margin-top: 10px;
+
 }
 .picapotedesign {
+   align-items: center;
     position: relative;
     text-align: center;
-    align-items: center;
+   
   font-family: "Anton SC", sans-serif;
-  font-weight: 320;
   font-style: normal;
+  font-size: 50px;
+  left: 35%;
+
 }   
 
-.aboutus {
-    
-   align-items: right ;    
-    }
 
 
 nav ul {
@@ -106,6 +107,7 @@ main {
     /* Relleno interno del contenido principal */
     padding: 1rem;
     font-size: 100%;
+    
 }
 /* Estilos para el contenedor principal del slider */
         .slider-container {
@@ -138,7 +140,7 @@ footer {
     /* Alineación del texto en el centro */
     text-align: center;
     /* Relleno interno del pie de página */
-     opacity: 75%;
+     opacity: 50%;
     padding: 1rem 0;
     width: 100%;
     /* Fija el pie de página en la parte inferior de la página */
