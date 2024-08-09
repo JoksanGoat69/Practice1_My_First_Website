@@ -107,6 +107,7 @@ main {
     /* Relleno interno del contenido principal */
     padding: 1rem;
     font-size: 100%;
+    align-items: center;
     
 }
 /* Estilos para el contenedor principal del slider */
