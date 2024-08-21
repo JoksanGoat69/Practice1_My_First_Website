@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Especifica el tipo de documento y la versión de HTML -->
+    <meta charset="UTF-8">
+    <!-- Configura el viewport para que el sitio sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Contact</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Sección de encabezado del sitio -->
+    <header>
+     
+    
+            <div class="Picapote" >
+                <a href="index.html"><img width="50" height="75" src="Picapote.png"></a>
+                    <a class="picapotedesign" > PORTFOLIO</a>
+
+            </div>
+  
+    <!-- Barra de navegación con enlaces -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+ <li><a href="aboutme.html">About Me</a></li>
+ <li><a href="portfolio.html">Portfolio</li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+                <ul>
+                    <li><a href="https://www.instagram.com/picapotedesign/">Picapote IG</a></li>
+                    <li><a href="https://www.instagram.com/rg_draws/">RG_Draws</a></li>
+                    <li><a href="https://www.instagram.com/joksanrg10/">Personal profile</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Contenido principal de la página -->
+    <main>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <section>
+            <h2>Mi Portafolio</h2>
+            <h3>Joksan Daniel Ramirez Garcia</h3>
+            <p>Artista Novato y Estudiante de Diseño Digital</p>
+            <p>Mi nombre es Joksan, soy Ilustrador y tambien estudiante de la carrera de Diseño Digital, mi trabajo se centra en la ilustración, el dibujo y también me gusta la animación tanto 2D como 3D, me gusta la escultura y todo lo relacionado con el mundo de los videojuegos, me gusta crear personajes y artes conceptuales.</p>
+        </section>
+        <h4> Mis Trabajos </h4>
+        <p> A continuacion les muestro un poco de los trabajos que he hecho</p>
+       
+        <div class="slider-container">
+        <div class="slider-content">
+            <div class="slider-item">
+                <img width= "400" height= "400" src="godzilla.png" alt="Imagen 1">
+            </div>
+            <div class="slider-item">
+                <img width= "400" height= "400" src="picapote2.png" alt="Imagen 2">
+            </div>
+            <div class="slider-item">
+                <img width= "400" height= "400" src="didpul.png" alt="Deadpool Icon">
+            </div>
+             <div class="slider-item">
+                <img width= "400" height= "400" src="31m.png" alt="31 Minutos Aniversario">
+            </div>
+            <div class="slider-item">
+                <img width= "400" height= "400" src="ditpul2.png" alt="DibujoDeadpool">
+            </div>
+            <div class="slider-item">
+                <img width= "400" height= "400" src="gatillo.png" alt="gato">
+            </div>
+            <div class="slider-item">
+                <img width= "400" height= "400" src="sp.png" alt="">
+            </div>
+            <div class="slider-item">
+                <img width= "400" height= "400" src="freddypija.png" alt="">
+            </div>
+            <div class="slider-item">
+                <img width= "400" height= "400" src="dogpool.png" alt="">
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        function showSlides() {
+            const slides = document.querySelectorAll(".slider-item");
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? "block" : "none";
+            });
+            setTimeout(() => {
+                slideIndex++;
+                showSlides();
+            }, 1500); // Cambia la imagen cada 3 segundos
+        }
+    </script>
+    </main>
+    <!-- Pie de página del sitio -->
+    <footer>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <p>&copy; Joksan Ramirez 2024 All rights reserved</p>
+    </footer>
+</body>
+</html>
